@@ -97,6 +97,7 @@ img
     width 340px
     @media screen and (max-width break-mobile)
       width 100%
+      margin-top 1rem
       margin-left -3px
 
 div.ord
@@ -110,12 +111,29 @@ div.ord
   left 0
   padding-top 20px
   padding-left 20px
+  padding-right 20px
 
 div.botten
   position absolute
   bottom 60px
   &.fixed
     position fixed
+
+div.top
+  position fixed
+  overflow hidden
+  white-space nowrap
+  top 10rem
+  left 50%
+  transform translateX(-50%)
+  max-width 340px
+  width 100%
+  text-align  center
+  word-spacing 2.6rem
+  @media screen and (max-width 320px)
+    top 8rem
+    word-spacing 1.9rem
+
 
 .background
   background-image url("../img/bg.svg")
